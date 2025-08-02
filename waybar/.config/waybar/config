@@ -9,11 +9,12 @@
     "margin-left": 0,
 
     "modules-left": [
-        "sway/workspaces"
+        "hyprland/workspaces",
+        "clock"
     ],
 
     "modules-center": [
-        "clock"
+        "hyprland/window"
     ],
 
     "modules-right": [
@@ -26,10 +27,20 @@
         "pulseaudio"
     ],
 
-    "sway/workspaces": {
-        "disable-scroll": true,
+    "hyprland/workspaces": {
+        "disable-scroll": false,
         "all-outputs": true,
         "tooltip": false
+    },
+
+    "hyprland/window": {
+      "format": "{initialTitle}",
+      "separate-outputs": true,
+      "rewrite": {
+        "Mozilla Firefox": "  ",
+        "kitty": "  ",
+        "Discord": "  "
+      }
     },
 
     "tray": {

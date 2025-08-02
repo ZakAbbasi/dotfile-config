@@ -8,11 +8,10 @@ To use this config, install GNU Stow, and run it with the appropriate config as 
 ### NVIM
 
 - [x] setting up treesitter, fuzzy-finder, auto-cmp
-    - [ ] configuring keymaps for esier navigationi
+    - [ ] configuring keymaps for esier navigation
     - [ ] setting up Godot to run with nvim
 
-- [ ] adding pop-ups to Waybar e.g WIFI popup
-- [ ] styling  Wofi --> styling animations and icons
-    - [ ] Adding a config file
+### HYPRLAND
+
 - [ ] styling Hypridle and Hyprlock to be more fleshed out
 - [ ] adding audio effects to user input

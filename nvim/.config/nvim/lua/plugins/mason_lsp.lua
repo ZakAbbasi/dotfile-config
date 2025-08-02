@@ -11,7 +11,8 @@ return {
         "ts_ls",
         "eslint",
         "pylsp",
-        "clangd"
+        "clangd",
+        "qmlls"
       },
       automatic_enable = true
     },

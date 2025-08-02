@@ -4,13 +4,14 @@
     min-height: 0;
     font-family: "BigBlueTerm437 Nerd Font";
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     padding: 0;
 }
 
 window#waybar {
-    background: #101010;
-    border-bottom: 2px solid #4b4239;
+    background: transparent;
+    border-bottom: transparent;
+    color: #ddc7a1;
 }
 
 tooltip {
@@ -29,12 +30,6 @@ tooltip {
     padding: 2px 8px;
 }
 
-#workspaces {
-    background-color: #322d28;
-    margin: 6px 0px 6px 6px;
-    border: 2px solid #625343;
-}
-
 #workspaces button {
     all: initial;
     min-width: 0;
@@ -43,7 +38,7 @@ tooltip {
     color: #917a53;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     color: #ddc7a1;
 }
 
@@ -52,9 +47,15 @@ tooltip {
     color: #1d2021;
 }
 
+#workspaces {
+    background-color: #1d2021;
+    margin: 6px 0px 6px 6px;
+    border: 2px solid #d79921;
+}
+
 #clock {
-    background-color: #322d28;
-    border: 2px solid #625343;
+    background-color: #1d2021;
+    border: 2px solid #d79921;
     color: #d4be98;
 }
 
@@ -69,15 +70,15 @@ tooltip {
 #memory,
 #network,
 #pulseaudio {
-    background-color: #c9af82;
-    border: 2px solid #917a53;
-    color: #1d2021;
+    background-color: #1d2021;
+    border: 2px solid #d79921;
+    color: #d4be98;
 }
 
 #cpu.critical,
 #memory.critical {
-    background-color: #c9af82;
-    border: 2px solid #917a53;
+    background-color: #1d2021;
+    border: 2px solid #d79921;
     color: #c14a4a;
 }
 

@@ -1,6 +1,6 @@
 -- Adds line numbers
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- Configures split direction
 vim.opt.splitbelow = true
