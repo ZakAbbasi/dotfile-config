@@ -1,100 +1,53 @@
 {
-    "layer": "top",
-    "spacing": 0,
-    "height": 0,
-
-    "margin-top": 0,
-    "margin-right": 0,
-    "margin-bottom": 0,
-    "margin-left": 0,
-
-    "modules-left": [
-        "hyprland/workspaces",
-        "clock"
-    ],
-
-    "modules-center": [
-        "hyprland/window"
-    ],
-
-    "modules-right": [
-        "tray",
-        "cpu_text",
-        "cpu",
-        "memory",
-        "battery",
-        "network",
-        "pulseaudio"
-    ],
-
-    "hyprland/workspaces": {
-        "disable-scroll": false,
-        "all-outputs": true,
-        "tooltip": false
-    },
-
-    "hyprland/window": {
-      "format": "{initialTitle}",
-      "separate-outputs": true,
-      "rewrite": {
-        "Mozilla Firefox": "  ",
-        "kitty": "  ",
-        "Discord": "  "
-      }
-    },
-
-    "tray": {
-        "spacing": 10,
-        "tooltip": false
-    },
-
-    "clock": {
-        "format": "{:%a %d, %I:%M %p}",
-        "tooltip": false
-    },
-
-    "cpu": {
-        "format": "cpu {usage}%",
-        "interval": 2,
-
-        "states": {
-            "critical": 90
-        }
-    },
-
-    "memory": {
-        "format": "mem {percentage}%",
-        "interval": 2,
-
-        "states": {
-            "critical": 80
-        }
-    },
-
-    "battery": {
-        "format": "bat {capacity}%",
-        "interval": 5,
-        "states": {
-            "warning": 20,
-            "critical": 10
-        },
-        "tooltip": false
-    },
-
-    "network": {
-        "format-wifi" : "wifi up",
-        "format-ethernet": "enth up",
-        "format-disconnected" : "no network",
-        "tooltip": false
-    },
-
-    "pulseaudio": {
-        "scroll-step": 5,
-        "max-volume": 150,
-        "format": "vol {volume}%",
-        "format-bluetooth": "vol {volume}%",
-        "nospacing": 1,
-        "on-click": "pavucontrol",
-        "tooltip": false
-    }
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "spacing": 4,
+  "modules-left": [
+    "wlr/workspaces",
+    "wlr/taskbar"
+  ],
+  "modules-center": [
+    "hyprland/window"
+  ],
+  "modules-right": [
+    "tray",
+    "hyprland/language",
+    "custom/weather",
+    "clock"
+  ],
+  "wlr/taskbar": {
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "foot"
+    ]
+  },
+  "wlr/workspaces": {
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1"
+  },
+  "hyprland/window": {
+    "max-length": 128
+  },
+  "clock": {
+    "format": "{:%c}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "tray": {
+    "spacing": 4
+  },
+  "custom/weather": {
+    "exec": "~/.config/waybar/wittr.sh",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 900
+  },
+  "hyprland/language": {
+    "format-pl": "[pl]",
+    "format-en": "[us]",
+    "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
+  }
 }

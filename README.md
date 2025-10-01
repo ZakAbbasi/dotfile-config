@@ -15,3 +15,9 @@ To use this config, install GNU Stow, and run it with the appropriate config as 
 
 - [ ] styling Hypridle and Hyprlock to be more fleshed out
 - [ ] adding audio effects to user input
+
+### Life Changes
+
+A little note for myself. I will be moving into my new accomodation for a little bit and I realise I may have neglected my Arch rice (just a little, lol). I will have to put this on hold until I am able to bring my PC to my new place.
+
+Until then I am going to be working on my Macbook. I will miss using Arch. sad...

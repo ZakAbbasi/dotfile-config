@@ -1,7 +1,7 @@
 import Quickshell
-import Quickshell.Io
-import QtQuick
+import "widgets"
 
-Scope {
-  id: root
+ShellRoot {
+  Bar {}
+  Workspaces {}
 }
