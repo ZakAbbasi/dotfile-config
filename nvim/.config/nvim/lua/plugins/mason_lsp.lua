@@ -5,7 +5,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "vimls",
-        "hyprls",
+       -- "hyprls",
         "html",
         "cssls",
         "ts_ls",
